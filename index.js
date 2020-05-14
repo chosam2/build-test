@@ -10,7 +10,7 @@ var handler = function(request, response) {
 	    console.log(Date());
 	    console.log("Received Request From " + request.connection.remoteAddress);
 	    response.writeHead(200);
-	    response.write("VERSION 0.3\n");
+	    response.write("VERSION 0.4\n");
 	    response.write("Message: " + process.argv[2] + "\n");
 	    response.write("Hostname: " + os.hostname() + "\n");
 	    response.write("Platform: " + os.platform() + "\n");
